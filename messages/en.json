@@ -1,0 +1,84 @@
+{
+  "HomePage": {
+    "welcome": "Welcome to",
+    "title": "ERC ROCG",
+    "courses": "Courses ⌵",
+    "events": "Events",
+    "home": "Home",
+    "about": "About Us",
+
+    "news": "News",
+    "gallery": "Gallery ⌵",
+    "contact": "Contact",
+    "imageAlt": "Medical students collaborating",
+    "aboutus": "About Us",
+    "headline": "Our RCOG System",
+    "highlight": "Inspires",
+    "description": "Education and Training: We organize conferences, workshops, and educational courses to ensure healthcare professionals have access to the latest advancements and best practices in obstetrics and gynaecology.",
+    "buttonText": "Discover More"
+  },
+  "Courses": {
+    "sectionTitle": "Our Courses",
+    "headline": "Our",
+    "highlight": "Courses",
+    "buttonText": "MORE COURSES",
+    "category": "Category of Course",
+    "date": "Date Instead",
+    "status": {
+      "online": "Online",
+      "active": "Active",
+      "specialty": "Specialty"
+    },
+    "course": {
+      "title": "Revision courses MRCOG",
+      "description": "There are many variations of passages orem psum available but the majority have suffer alteration in some form by injected."
+    }
+  },
+
+  "Coursescard": {
+    "joinCourse": "JOIN COURSE",
+    "details": "DETAILS",
+    "online": "Online",
+    "active": "Active",
+    "specialty": "Specialty"
+  },
+  "gallery": {
+    "Our Photo": "Our Photo",
+    "gallery": "GALLERY",
+    "Gallery": "Gallery"
+  },
+  "BlogSection": {
+    "OurBlog": "Our Blog",
+    "LatestNewsAndBlog": "Latest News & Blog",
+    "By": "By",
+    "READ_MORE": "READ MORE"
+  },
+
+  "Footer": {
+    "QuickLinks": "Quick Links",
+    "OurCourses": "Our Courses",
+    "ContactUs": "Contact us",
+    "Phone": "Phone",
+    "Location": "Location",
+    "Email": "Email",
+    "FollowUs": "Follow us",
+    "Facebook": "Facebook",
+    "Twitter": "Twitter",
+    "LinkedIn": "LinkedIn",
+    "YouTube": "YouTube",
+    "Copyright": "© Copyright 2025",
+    "AllRightsReserved": "All Rights Reserved.",
+    "TrainingCourses": "Training courses MRCOG",
+    "RevisionCourses": "Revision courses MRCOG",
+    "FranchiseCourses": "Franchise courses MRCOG",
+    "TrainingOnline": "Training (Hands-on / online)",
+    "Webnaisr": "Webnaisr",
+    "AboutUs": "About Us",
+    "Home": "Home",
+    "Gallery": "Gallery",
+    "Courses": "Courses",
+    "News": "News",
+    "Contact": "Contact",
+    "description": " We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable."
+  }
+}

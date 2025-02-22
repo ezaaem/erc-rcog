@@ -1,6 +1,7 @@
 import React from "react";
 import { Calendar, CircleUser, MessageCircle, BookOpen } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl"; // Importing useTranslations for translations
 
 const blogPosts = [
   {
@@ -36,6 +37,8 @@ const blogPosts = [
 ];
 
 const BlogSection = () => {
+  const t = useTranslations("BlogSection"); // Using translations for blog section
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:w-[70%]">
@@ -44,11 +47,11 @@ const BlogSection = () => {
           <div className="flex items-center justify-center w-32 mx-auto border-black border-b-2 gap-2">
             <BookOpen className="text-sky-600" size={20} />
             <span className="text-sky-600 font-medium tracking-widest uppercase">
-              Our Blog
+              {t("OurBlog")}
             </span>
           </div>
           <h2 className="text-3xl pt-2 font-bold text-gray-900">
-            Latest News & <span className="text-sky-600">Blog</span>
+            {t("LatestNewsAndBlog")}
           </h2>
         </div>
 
@@ -80,7 +83,9 @@ const BlogSection = () => {
                 <div className="flex items-center border-b-2 border-gray-100 pb-3 text-gray-500 text-sm mb-2 space-x-4">
                   <div className="flex items-center gap-1">
                     <CircleUser size={14} />
-                    <span>By {post.author}</span>
+                    <span>
+                      {t("By")} {post.author}
+                    </span>
                   </div>
                   <div className="flex items-center gap-1">
                     <MessageCircle size={14} />
@@ -98,7 +103,7 @@ const BlogSection = () => {
 
                 {/* Read More Button */}
                 <button className="bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold px-3 py-2 rounded-lg transition-colors duration-200 inline-flex items-center group">
-                  READ MORE{" "}
+                  {t("READ_MORE")}{" "}
                   <svg
                     className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"
                     fill="none"
