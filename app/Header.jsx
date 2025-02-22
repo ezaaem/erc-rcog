@@ -49,8 +49,8 @@ function Header() {
             </svg>
           </button>
         </div>
-        <p className="text-white flex items-center max-sm:text-3xl justify-center font-bold text-4xl">
-          {t("welcome", { defaultTranslation: "Welcome to" })}{" "}
+        <p className="text-white flex items-center max-sm:text-xl justify-center font-bold text-4xl">
+          {t("welcome", { defaultTranslation: "Welcome to" })}
           <span className="text-outline ml-2">
             {t("title", { defaultTranslation: "ERC RCOG" })}
           </span>

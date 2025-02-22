@@ -11,7 +11,7 @@ const AboutSection = () => {
     <div className="container mx-auto px-4 max-sm:pt-40 md:mt-64 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 md:w-[70%]">
       {/* Image Section */}
       <div className="w-full md:w-1/2">
-        <div className="rounded-3xl shadow-2xl">
+        <div className="rounded-3xl max-sm:pt-72 shadow-2xl">
           <img
             src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
             alt={t("imageAlt")}
@@ -21,7 +21,7 @@ const AboutSection = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full md:w-1/2 space-y-6">
+      <div className="w-full md:w-1/2  space-y-6">
         <div className="flex items-center gap-2 border-black border-b-2 w-28">
           <BookOpen
             size={20}
