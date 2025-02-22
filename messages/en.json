@@ -2,8 +2,8 @@
   "HomePage": {
     "welcome": "Welcome to",
     "title": "ERC RCOG",
-    "courses": "Courses ⌵",
-    "events": "Events",
+    "courses": "Courses ",
+    "events": "Events ⌵",
     "home": "Home",
     "about": "About Us",
     "course": "Courses",
@@ -15,7 +15,8 @@
     "headline": "Our RCOG System",
     "highlight": "Inspires",
     "description": "Education and Training: We organize conferences, workshops, and educational courses to ensure healthcare professionals have access to the latest advancements and best practices in obstetrics and gynaecology.",
-    "buttonText": "Discover More"
+    "buttonText": "Discover More",
+    "event": "Events"
   },
   "Courses": {
     "sectionTitle": "Our Courses",

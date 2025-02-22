@@ -13,7 +13,7 @@ const AboutSection = () => {
       <div className="w-full md:w-1/2">
         <div className="rounded-3xl max-sm:pt-72 shadow-2xl">
           <img
-            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80"
+            src="/about.png"
             alt={t("imageAlt")}
             className="w-full rounded-3xl h-[500px] object-cover"
           />

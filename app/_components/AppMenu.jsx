@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -15,6 +15,7 @@ const AppMenu = () => {
   const router = useRouter();
   const pathname = usePathname(); // Get current path
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   // Define menu items
   const pages = [
@@ -26,6 +27,21 @@ const AppMenu = () => {
     { name: t("gallery"), href: "/gallery" },
     { name: t("contact"), href: "/contact" },
   ];
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true); // Add background color and opacity when scrolled
+      } else {
+        setIsScrolled(false); // Remove background color and opacity when at the top
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Function to switch language
   const switchLanguage = () => {
@@ -35,8 +51,12 @@ const AppMenu = () => {
   };
 
   return (
-    <nav className="bg-transparent  text-white mx-auto md:w-[66%]">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+    <nav
+      className={`${
+        isScrolled ? "bg-[#9ea9b4] bg-opacity-80" : "bg-transparent"
+      } text-white fixed w-full top-0 left-0 z-10 transition-all`}
+    >
+      <div className="container mx-auto flex items-center md:w-[66%] justify-between py-4 px-6">
         {/* Logo */}
         <Link href={`/${locale}/`}>
           <Image src="/logo.png" alt="Logo" width={70} height={50} />
@@ -62,7 +82,9 @@ const AppMenu = () => {
             >
               {locale === "en" ? "العربية" : "English"}
             </button>
-            <DarkModeToggle />
+            <div className="hidden md:flex">
+              <DarkModeToggle />
+            </div>
           </div>
         </div>
 
@@ -90,12 +112,17 @@ const AppMenu = () => {
               </Link>
             </div>
           ))}
-          <button
-            onClick={switchLanguage}
-            className="w-full bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-md font-bold text-white mt-2 transition"
-          >
-            {locale === "en" ? "العربية" : "English"}
-          </button>
+          <div className="flex gap-4 h-12 items-center justify-center">
+            <button
+              onClick={switchLanguage}
+              className=" bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-md font-bold text-white  transition"
+            >
+              {locale === "en" ? "العربية" : "English"}
+            </button>
+            <div className="flex">
+              <DarkModeToggle />
+            </div>
+          </div>
         </div>
       )}
     </nav>

@@ -7,32 +7,28 @@ const DarkModeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check the saved theme preference in localStorage
-    if (
-      localStorage.theme === "dark" ||
-      (!localStorage.theme &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    const storedTheme = localStorage.getItem("theme");
+
+    if (storedTheme === "dark") {
       document.documentElement.classList.add("dark");
       setIsDark(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setIsDark(false);
     }
   }, []);
 
   const toggleDarkMode = () => {
-    if (isDark) {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
+    const newTheme = isDark ? "light" : "dark";
+    document.documentElement.classList.toggle("dark", !isDark);
+    localStorage.setItem("theme", newTheme);
     setIsDark(!isDark);
   };
 
   return (
     <button
       onClick={toggleDarkMode}
-      className="flex items-center justify-center p-2 rounded-md bg-sky-600 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-sky-700 transition"
+      className="  items-center      justify-center p-2 rounded-md bg-sky-600 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-sky-700 transition"
     >
       {isDark ? (
         <Sun className="w-6 h-6 text-white" />

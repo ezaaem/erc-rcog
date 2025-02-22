@@ -15,13 +15,13 @@ function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="bg-gray-900 text-white pt-12">
+    <footer className="bg-sky-900 dark:bg-black text-white pt-12">
       <div className="container mx-auto border-b-2 border-gray-700 px-4 w-[70%] p-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description Section */}
           <div className="space-y-4">
             <Image src="/logo.png" alt="RCOG Logo" width={120} height={120} />
-            <p className="text-sm text-gray-400 mt-4">{t("description")}</p>
+            <p className="text-sm text-white mt-4">{t("description")}</p>
           </div>
 
           {/* Quick Links Section */}
@@ -41,7 +41,7 @@ function Footer() {
                 <li key={item}>
                   <Link
                     href="#"
-                    className="text-gray-400 hover:text-white flex items-center"
+                    className="text-white hover:text-white flex items-center"
                   >
                     <span className="text-sky-400 mr-2">›</span>
                     {item}
@@ -67,7 +67,7 @@ function Footer() {
                 <li key={course}>
                   <Link
                     href="#"
-                    className="text-gray-400 hover:text-white flex items-center"
+                    className="text-white hover:text-white flex items-center"
                   >
                     <span className="text-sky-400 mr-2">›</span>
                     {course}

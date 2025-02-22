@@ -10,8 +10,7 @@ const courses = [
     id: 1,
     titleKey: "course.title",
     descriptionKey: "course.description",
-    image:
-      "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80",
+    image: "/c1.png",
     categoryKey: "category",
     dateKey: "date",
     status: {
@@ -24,8 +23,7 @@ const courses = [
     id: 2,
     titleKey: "course.title",
     descriptionKey: "course.description",
-    image:
-      "https://images.unsplash.com/photo-1520333789090-1afc82db536a?auto=format&fit=crop&q=80",
+    image: "/c2.png",
     categoryKey: "category",
     dateKey: "date",
     status: {
@@ -38,8 +36,7 @@ const courses = [
     id: 3,
     titleKey: "course.title",
     descriptionKey: "course.description",
-    image:
-      "https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80",
+    image: "/c3.png",
     categoryKey: "category",
     dateKey: "date",
     status: {

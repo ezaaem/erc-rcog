@@ -91,7 +91,7 @@ function Header() {
           </svg>
         </button>
         <button className="bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
-          {t("events", { defaultTranslation: "Events" })}
+          {t("event", { defaultTranslation: "Events" })}
           <svg
             className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"
             fill="none"
