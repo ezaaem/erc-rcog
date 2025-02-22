@@ -77,7 +77,7 @@ const AppMenu = () => {
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white py-2 px-4 shadow-lg">
+        <div className="md:hidden bg-gray-300 bg-opacity-50 z-220  py-2 px-4 shadow-lg">
           {pages.map(({ name, href }) => (
             <div key={name} onClick={() => setMenuOpen(false)}>
               <Link
