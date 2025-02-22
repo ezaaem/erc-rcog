@@ -8,3 +8,18 @@
     color: transparent;
   }
 }
+:root {
+  --background: #ffffff;
+  --foreground: #1e293b; /* Dark gray */
+}
+
+.dark {
+  --background: #1e293b; /* Dark mode background */
+  --foreground: #ffffff; /* White text for dark mode */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+}

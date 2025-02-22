@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useRouter, usePathname, useParams } from "next/navigation";
 import { Menu as MenuIcon } from "lucide-react";
+import DarkModeToggle from "./DarkModeToggle";
 
 const AppMenu = () => {
   const t = useTranslations("HomePage"); // Load translations
@@ -54,13 +55,14 @@ const AppMenu = () => {
               </Link>
             ))}
           </div>
-          <div>
+          <div className="flex items-center space-x-4">
             <button
               onClick={switchLanguage}
               className="hidden md:flex bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded-md font-bold text-white transition"
             >
               {locale === "en" ? "العربية" : "English"}
             </button>
+            <DarkModeToggle />
           </div>
         </div>
 

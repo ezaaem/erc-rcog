@@ -75,7 +75,7 @@ function Header() {
       </div>
       <div className="flex justify-center space-x-3 mt-5">
         <button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
-          {t("courses", { defaultTranslation: "Courses" })}
+          {t("course", { defaultTranslation: "Courses" })}
           <svg
             className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"
             fill="none"

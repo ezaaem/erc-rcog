@@ -21,27 +21,30 @@ const AboutSection = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full md:w-1/2  space-y-6">
-        <div className="flex items-center gap-2 border-black border-b-2 w-28">
+      <div className="w-full md:w-1/2 space-y-6">
+        <div className="flex items-center gap-2 border-black dark:border-gray-400 border-b-2 w-28">
           <BookOpen
             size={20}
             strokeWidth={1}
-            className="w-5 h-5 text-sky-600"
+            className="w-5 h-5 text-sky-600 dark:text-sky-400"
           />
-          <span className="text-sky-600 font-medium tracking-wide uppercase">
+          <span className="text-sky-600 dark:text-sky-400 font-medium tracking-wide uppercase">
             {t("aboutus")}
           </span>
         </div>
 
-        <h2 className="text-4xl md:text-3xl font-bold text-gray-900 leading-tight">
-          {t("headline")} <span className="text-sky-600">{t("highlight")}</span>
+        <h2 className="text-4xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
+          {t("headline")}{" "}
+          <span className="text-sky-600 dark:text-sky-400">
+            {t("highlight")}
+          </span>
         </h2>
 
-        <p className="text-base text-gray-600 leading-relaxed">
+        <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">
           {t("description")}
         </p>
 
-        <button className="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
+        <button className="bg-sky-600 hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
           {t("buttonText")}
           <svg
             className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"

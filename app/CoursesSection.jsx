@@ -54,19 +54,25 @@ const CoursesSection = () => {
   const t = useTranslations("Courses");
 
   return (
-    <section className="py-16 md:py-24 bg-gray-200 mx-auto">
+    <section className="py-16 md:py-24 bg-gray-200 dark:bg-gray-900 mx-auto">
       <div className="container mx-auto px-4 md:w-[70%]">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center mx-auto w-40 border-black border-b-2 justify-center gap-2">
-            <BookOpen size={20} strokeWidth={1.5} className="text-sky-600" />
-            <span className="text-sky-600 font-medium tracking-widest uppercase">
+          <div className="flex items-center mx-auto w-40 border-black dark:border-gray-400 border-b-2 justify-center gap-2">
+            <BookOpen
+              size={20}
+              strokeWidth={1.5}
+              className="text-sky-600 dark:text-sky-400"
+            />
+            <span className="text-sky-600 dark:text-sky-400 font-medium tracking-widest uppercase">
               {t("sectionTitle")}
             </span>
           </div>
-          <h2 className="text-3xl pt-2 font-bold text-gray-900">
+          <h2 className="text-3xl pt-2 font-bold text-gray-900 dark:text-gray-100">
             {t("headline")}{" "}
-            <span className="text-sky-600">{t("highlight")}</span>
+            <span className="text-sky-600 dark:text-sky-400">
+              {t("highlight")}
+            </span>
           </h2>
         </div>
 
@@ -87,13 +93,13 @@ const CoursesSection = () => {
 
         {/* Navigation Dots */}
         <div className="flex justify-center items-center gap-2 pt-8 p-5">
-          <div className="w-6 h-3 rounded-full bg-gray-600"></div>
-          <div className="w-3 h-3 rounded-full bg-gray-300"></div>
+          <div className="w-6 h-3 rounded-full bg-gray-600 dark:bg-gray-300"></div>
+          <div className="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-600"></div>
         </div>
 
         {/* More Courses Button */}
         <div className="text-center pb-5">
-          <button className="bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
+          <button className="bg-sky-600 hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-600 text-white text-xs font-semibold px-6 py-3 rounded-lg transition-colors duration-200 inline-flex items-center group">
             {t("buttonText")}
             <svg
               className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200"
