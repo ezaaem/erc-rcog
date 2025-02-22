@@ -52,7 +52,7 @@ function Header() {
         <p className="text-white flex items-center max-sm:text-3xl justify-center font-bold text-4xl">
           {t("welcome", { defaultTranslation: "Welcome to" })}{" "}
           <span className="text-outline ml-2">
-            {t("title", { defaultTranslation: "ERC ROCG" })}
+            {t("title", { defaultTranslation: "ERC RCOG" })}
           </span>
         </p>
         <div className="flex rounded-full bg-gray-200 p-3 bg-opacity-25 hover:bg-opacity-100 group">
