@@ -8,7 +8,7 @@ const AboutSection = () => {
   const t = useTranslations("HomePage"); // Load translations
 
   return (
-    <div className="container mx-auto px-4 mt-64 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 md:w-[70%]">
+    <div className="container mx-auto px-4 max-sm:pt-40 md:mt-64 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 md:w-[70%]">
       {/* Image Section */}
       <div className="w-full md:w-1/2">
         <div className="rounded-3xl shadow-2xl">

@@ -4,7 +4,7 @@ import AppMenu from "./_components/AppMenu";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const images = ["/header.png", "/header2.jpg", "/header3.jpg"];
+const images = ["/header3.jpg", "/header2.jpg", "/header.png"];
 
 function Header() {
   const t = useTranslations("HomePage");
@@ -49,7 +49,7 @@ function Header() {
             </svg>
           </button>
         </div>
-        <p className="text-white flex items-center justify-center font-bold text-4xl">
+        <p className="text-white flex items-center max-sm:text-3xl justify-center font-bold text-4xl">
           {t("welcome", { defaultTranslation: "Welcome to" })}{" "}
           <span className="text-outline ml-2">
             {t("title", { defaultTranslation: "ERC ROCG" })}
@@ -58,7 +58,7 @@ function Header() {
         <div className="flex rounded-full bg-gray-200 p-3 bg-opacity-25 hover:bg-opacity-100 group">
           <button onClick={prevSlide}>
             <svg
-              className="w-5 h-5 transform text-white group-hover:text-black group-hover:translate-x-1 transition-transform duration-200"
+              className="w-5 h-5  transform text-white group-hover:text-black group-hover:translate-x-1 transition-transform duration-200"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

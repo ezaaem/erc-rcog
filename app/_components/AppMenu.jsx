@@ -34,7 +34,7 @@ const AppMenu = () => {
   };
 
   return (
-    <nav className="bg-transparent text-white mx-auto md:w-[66%]">
+    <nav className="bg-transparent  text-white mx-auto md:w-[66%]">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <Link href={`/${locale}/`}>
