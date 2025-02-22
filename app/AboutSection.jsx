@@ -11,11 +11,11 @@ const AboutSection = () => {
     <div className="container mx-auto px-4 max-sm:pt-40 md:mt-64 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12 md:w-[70%]">
       {/* Image Section */}
       <div className="w-full md:w-1/2">
-        <div className="rounded-3xl max-sm:pt-72 shadow-2xl">
+        <div className="rounded-3xl max-sm:pt-72 overflow-hidden group shadow-2xl">
           <img
             src="/about.png"
             alt={t("imageAlt")}
-            className="w-full rounded-3xl h-[500px] object-cover"
+            className="w-full rounded-3xl h-[500px] object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </div>
       </div>

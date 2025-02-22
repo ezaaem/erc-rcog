@@ -8,13 +8,13 @@ const CourseCard = ({ title, description, image, category, date, status }) => {
   const t = useTranslations("Coursescard");
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
       {/* Image */}
-      <div className="relative h-48 rounded-2xl">
+      <div className="relative h-48 rounded-2xl group">
         <img
           src={image}
           alt={title}
-          className="w-full rounded-2xl h-full object-cover"
+          className="w-full rounded-2xl h-full object-cover transition-transform duration-300 group-hover:scale-105 "
         />
       </div>
 

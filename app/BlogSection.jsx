@@ -60,7 +60,7 @@ const BlogSection = () => {
           {blogPosts.map((post) => (
             <div
               key={post.id}
-              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
               {/* Image with Date Badge */}
               <div className="relative group">
